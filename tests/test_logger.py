@@ -1,5 +1,6 @@
 import logging
 import unittest  
+from unittest.mock import patch
 
 import sys,os
 
@@ -8,18 +9,15 @@ sys.path.append(os.path.abspath(os.path.join('scripts')))
 
 from log_helper import AppLog
 
-mes = "Test me"
+
+
 
 class TestCases(unittest.TestCase):
+    @patch("example.logging.info")
     def test_logging(self):
-        tf = AppLog(mes)
-        self.assertEqual(mes.get_app_logger(), tf.mes.get_app_logger())
-    #     self.assert
-    #     with self.assertLogs() as captured:
-    #         AppLog.get_app_logger(self)
-    #     self.assertEqual(len(captured.logger), 1) 
-    #     self.assertEqual(captured.logger[0].getMessage(), "Hello, World!") 
+        AppLog.get_app_logger()
+        self.assert_called_once_with("Hello, World!")
 
-    # def test_class_creation(self):
-    #     data_preProcessing = dataProcessor(df)
-    #     self.assertEqual(df.info(), data_preProcessing.df.info())
+   
+
+        
