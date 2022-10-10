@@ -1,7 +1,7 @@
 import logging
 
 
-class App_Logger:
+class AppLog:
 
     def __init__(self, file_name: str, basic_level=logging.INFO):
         # Gets or creates a logger
