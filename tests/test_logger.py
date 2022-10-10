@@ -13,7 +13,7 @@ from log_helper import AppLog
 
 
 class TestCases(unittest.TestCase):
-    @patch("example.logging.info")
+    @patch("log_helper.logging.info")
     def test_logging(self):
         AppLog.get_app_logger()
         self.assert_called_once_with("Hello, World!")
