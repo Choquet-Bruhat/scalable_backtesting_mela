@@ -1,7 +1,7 @@
 from unittest import TestCase
 from example import method_with_logging
 
-class TestExample(TestCase):
+class TestLogger(TestCase):
     def test_logging(self):
         with self.assertLogs() as captured:
             method_with_logging()
