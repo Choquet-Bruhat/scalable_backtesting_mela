@@ -7,6 +7,9 @@ from datetime import datetime, timedelta
 import pandas as pd
 import plotly.graph_objects as go
 
+import plotly.io as pio
+from IPython.display import Image
+
 
 def plotSimpleCol(df: pd.DataFrame, cols: str):
     df[['Open', 'High', 'Low', 'Close']].plot(grid=True, figsize=(15, 10))
@@ -51,4 +54,6 @@ def plotlyPlotCandlestick(df: pd.DataFrame, sma: int, lma: int, title: str):
         xaxis_rangeslider_visible = False
     )
 
-    fig.show()
+    # fig.show()
+    # Image(pio.to_image(fig, format='png', width=1200))
+    return fig
