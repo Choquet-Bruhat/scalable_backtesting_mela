@@ -17,7 +17,7 @@ USAGE:
 
  ## SET UP DOCKER CONTAINERS
 
-After cloning the repository, change directory to the project folder and spin up the docker-compose file to run the web app on a cocker container together with kafka, airflow and spark all together. 
+After cloning the repository, change directory to the project folder and spin up the docker-compose file to run the web app on a docker container together with kafka, airflow and spark all together. 
  
  * docker-compose -f docker-compose.yml up -d
 
