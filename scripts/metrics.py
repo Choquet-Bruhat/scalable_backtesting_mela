@@ -34,3 +34,6 @@ class Btmetrics:
         cagr = float((cum_rets_series[-1:].values)**(1/(len(cum_rets_series)/N)))-1
         return round(cagr,3)
 
+    
+    def returns():
+        return df.Close.pct_change()
