@@ -13,7 +13,7 @@ A brief description of what a K-line or candlestick data is can be found [here](
 USAGE: 
 * First clone the repository and initialize npm.
 * Then specify the Timeframe, file name on which the data is to be written and the range of time.
-* Finally run kline_binance using the command 'node kline_binance'. This will generate a kline data in a csv format with the necessary fields like open, close, high and low.
+* Finally run kline_binance using the command 'node kline_binance'. This will generate a kline data in a csv format with the necessary fields like open, close, high and low in the same directory with the kline_binance.js file.
 
  ## SET UP DOCKER CONTAINERS
 
