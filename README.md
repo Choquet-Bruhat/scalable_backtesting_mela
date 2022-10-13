@@ -4,6 +4,8 @@
 # Overview
 A startup called Mela wants to make it simple for everyone to enter the world of cryptocurrencies. It also wants to give investors a reliable source of investment while lowering the risk associated with trading cryptocurrencies. This project's aim is to design and build a reliable, large-scale trading data pipeline. 
 
+# Project Objective 
+The main objective of this project is to design and build a reliable, large-scale trading data pipeline that can run various backtests and store various useful artifacts in a robust data warehouse system.
 
 # Data
 * There are a number of data points that yahoo finance and binance provide, but for the purpose of testing the backend development, we started off with the candlestick data.
