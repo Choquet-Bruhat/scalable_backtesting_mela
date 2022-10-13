@@ -57,3 +57,13 @@ def plotlyPlotCandlestick(df: pd.DataFrame, sma: int, lma: int, title: str):
     # fig.show()
     # Image(pio.to_image(fig, format='png', width=1200))
     return fig
+def plot_bar(df: pd.DataFrame, x_col: str, y_col: str, title: str, xlabel: str, ylabel: str) -> None:
+        
+        plt.figure(figsize=(12, 7))
+        sns.barplot(data=df, x=x_col, y=y_col)
+        plt.title(title, size=20)
+        plt.xticks(rotation=75, fontsize=14)
+        plt.yticks(fontsize=14)
+        plt.xlabel(xlabel, fontsize=16)
+        plt.ylabel(ylabel, fontsize=16)
+        plt.show()
