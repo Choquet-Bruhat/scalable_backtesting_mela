@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import NavBar from './components/Navbar';
 import HomePage from './components/Home';
 import LoginPage from './components/Login';
+import SignUpPage from './components/SignUp';
 
 import {
   BrowserRouter as Router,
