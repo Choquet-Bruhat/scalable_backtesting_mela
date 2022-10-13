@@ -4,7 +4,7 @@ CREATE TABLE "User_Table" (
   "Email" varchar,
 
 );
-CREATE TABLE "Result_Table" (
+CREATE TABLE "trade_result" (
   "ID" varchar(PK),
   "return" varchar,
   "Number_of_trades" int,
