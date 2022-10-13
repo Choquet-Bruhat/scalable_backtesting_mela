@@ -2,7 +2,7 @@
 <img title="Mela" alt="Alt text" src="/images/cryptoTrading.png" width= "1000">
 
 # Overview
-A startup called Mela wants to make it simple for everyone to enter the world of cryptocurrencies. It also wants to give investors a reliable source of investment while lowering the risk associated with trading cryptocurrencies. This project's aim is to design and build a reliable, large-scale trading data pipeline. 
+Mela is our client and wants to make it simple for everyone to enter the world of cryptocurrencies. It also wants to give investors a reliable source of investment while lowering the risk associated with trading cryptocurrencies.   
 
 # Project Objective 
 The main objective of this project is to design and build a reliable, large-scale trading data pipeline that can run various backtests and store various useful artifacts in a robust data warehouse system.
