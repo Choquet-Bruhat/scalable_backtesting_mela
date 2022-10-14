@@ -5,6 +5,7 @@ import NavBar from './components/Navbar';
 import HomePage from './components/Home';
 import SignUpPage from './components/SignUp';
 import LoginPage from './components/Login';
+import Createback from './components/createbacktest';
 
 import {
   BrowserRouter as Router,
@@ -19,6 +20,9 @@ const App=()=>{
       <div class="container">
         <NavBar/>
         <Switch>
+          <Route path="/createbacktest">
+            <Createback/>
+          </Route>
           <Route path="/signup">
             <SignUpPage/>
           </Route>

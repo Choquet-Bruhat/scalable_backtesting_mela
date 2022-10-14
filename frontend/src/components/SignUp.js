@@ -66,11 +66,11 @@ const SignUpPage = () => {
                 </p>
                 </Alert>
 
-                <h1>Sign Up Page</h1>
+                <h1>Sign Up</h1>
                 
                 </>
                 :
-                <h1>Sign Up Page</h1>
+                <h1>Sign Up</h1>
                
                }
                 <form>

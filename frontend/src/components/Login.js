@@ -50,7 +50,7 @@ const LoginPage=()=>{
     return(
         <div className="container">
         <div className="form">
-            <h1>Login Page</h1>
+            <h1>Login</h1>
             <form>
                 <Form.Group>
                     <Form.Label>Username</Form.Label>

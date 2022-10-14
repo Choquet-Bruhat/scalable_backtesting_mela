@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import { useAuth ,logout} from '../auth'
 
 
-
-
 const LoggedInLinks = () => {
     return (
         <>
@@ -12,7 +10,7 @@ const LoggedInLinks = () => {
                 <Link className="nav-link active" to="/">Home</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link  active" to="/create_recipe">Create Recipes</Link>
+                <Link className="nav-link  active" to="/create_recipe">Create Backtest</Link>
             </li>
             <li className="nav-item">
                 <a className="nav-link active" href="#" onClick={()=>{logout()}}>Log Out</a>
@@ -34,7 +32,9 @@ const LoggedOutLinks = () => {
             <li className="nav-item">
                 <Link className="nav-link active" to="/login" >Login</Link>
             </li>
-
+            <li className="nav-item">
+                <Link className="nav-link active" to="/createbacktest" >Backtest</Link>
+            </li>
         </>
     )
 }
