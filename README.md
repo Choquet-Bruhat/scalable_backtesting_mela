@@ -24,6 +24,7 @@ After cloning the repository, change directory to the project folder and spin up
  
  * docker-compose -f docker-compose.yml up -d
 
+
 Further explanation about the tools and how to run them is given on separate readme files found in each folders.
 # Tools and technology used to develop the system
 - Frontend React.js(Readme.md)on frontend folder
