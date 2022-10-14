@@ -24,12 +24,13 @@ After cloning the repository, change directory to the project folder and spin up
  
  * docker-compose -f docker-compose.yml up -d
 
-Futher explanation about the tools and how to run them is given on separate readme files found in each folders.
-# Tools and technology used to develope the system
+
+Further explanation about the tools and how to run them is given on separate readme files found in each folders.
+# Tools and technology used to develop the system
 - Frontend React.js(Readme.md)on frontend folder
-- Backend Flask (Readme.md) on backend floder
-- Kafka (Readme.md) on Kafka floder
-- Backtesting stratagies(Readme.md) on Backtesting floder
-- Airflow(Readme.md) on Airflow floder
-- MLflow(Readme.md) on MLflow floder
+- Backend Flask (Readme.md) on backend Folder 
+- Kafka (Readme.md) on Kafka Folder 
+- Backtesting strategies(Readme.md) on Backtesting Folder 
+- Airflow (Readme.md) on Airflow Folder 
+- MLflow(Readme.md) on MLflow Folder
 
