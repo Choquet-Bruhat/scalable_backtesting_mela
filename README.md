@@ -2,8 +2,11 @@
 <img title="Mela" alt="Alt text" src="/images/cryptoTrading.png" width= "1000">
 
 # Overview
-A startup called Mela wants to make it simple for everyone to enter the world of cryptocurrencies. It also wants to give investors a reliable source of investment while lowering the risk associated with trading cryptocurrencies. This project's aim is to design and build a reliable, large-scale trading data pipeline. 
+Mela is our client and wants to make it simple for everyone to enter the world of cryptocurrencies. It also wants to give investors a reliable source of investment while lowering the risk associated with trading cryptocurrencies.   
+Although the past performance of any financial market is never a reliable indicator of the future, it is important to run backtests that simulate current and past particular situations as well as their trend over time. Having a clear understanding of the financial system, stock market trading,  and recognizing the complex data engineering systems involved in the crypto and general stock market trading systems are essential.
 
+# Project Objective 
+The objective of this project is to design and build a reliable, large-scale trading data pipeline that can run various backtests and store various useful artifacts in a robust data warehouse system.
 
 # Data
 * There are a number of data points that yahoo finance and binance provide, but for the purpose of testing the backend development, we started off with the candlestick data.
@@ -21,4 +24,14 @@ After cloning the repository, change directory to the project folder and spin up
  
  * docker-compose -f docker-compose.yml up -d
 
-Futher explanation about the tools and how to run them is given on separate readme files found in each folders.
+
+Further explanation about the tools and how to run them is given on separate readme files found in each folders.
+# Tools and technology used to develop the system
+- Frontend React.js(Readme.md)on frontend folder
+- Backend Flask (Readme.md) on backend Folder 
+- Kafka (Readme.md) on Kafka Folder 
+- Backtesting strategies(Readme.md) on Backtesting Folder 
+- Airflow (Readme.md) on Airflow Folder 
+- MLflow(Readme.md) on MLflow Folder
+
+
