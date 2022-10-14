@@ -30,4 +30,6 @@ Futher explanation about the tools and how to run them is given on separate read
 - Backend Flask (Readme.md) on backend floder
 - Kafka (Readme.md) on Kafka floder
 - Backtesting stratagies(Readme.md) on Backtesting floder
+- Airflow(Readme.md) on Airflow floder
+- MLflow(Readme.md) on MLflow floder
 
