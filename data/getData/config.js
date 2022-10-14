@@ -1,9 +1,9 @@
 module.exports = {
     symbol:'BTCUSDT',
     timeframe:'1m',
-    fromTS:`09/10/2022 23:59:59`,
+    fromTS:`03/12/2022 23:59:59`,
     toTS:`09/12/2022 23:59:59`,
-    fileName: 'BTCUSDT_2days_data.csv',
+    fileName: 'BTCUSDT_6months_data.csv',
 
     tfw:{
         '12h':12*60*60*1000,
