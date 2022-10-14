@@ -11,3 +11,13 @@
 .recipe{
     margin-top:20px;
 }
+.welcome_content {
+    width: 100%;
+    height: 100%;
+    top: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(172, 207, 250);
+    text-align: center;
+}
