@@ -3,7 +3,7 @@ from flask_restx import Api, Resource
 from config import DevConfig
 
 app = Flask(__name__)
-
+app.config.from_object(DevConfig)
 api = Api(app, doc="/docs")
 
 @api.route('/hello')
@@ -14,4 +14,4 @@ class HelloResource(Resource):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
