@@ -6,6 +6,7 @@ import { Button } from 'reactstrap';
 
 const myStyle={
             backgroundImage:`url(${backtesting})`,
+            
             height:'100vh',
             marginTop:'-55px',
             fontSize:'50px',
