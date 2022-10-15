@@ -1,14 +1,35 @@
 import React, {useState} from 'react'
 import '../styles/main.css'
-import { Form, Button } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap';
 import "react-datepicker/dist/react-datepicker.css";
-import DatePicker from 'react-datepicker'
-const today = new Date();
+import DatePicker from 'react-datepicker';
+import Select from 'react-select';
 
 const Createback = () =>{
     const [startDate, setstartDate] = useState(null)
     const [endDate, setendDate] = useState(null)
-
+    const [selectedCoin,setselectedCoin] = useState(null)
+    const coin = [
+        {
+            value: 1,
+            label: "ETH"
+        },
+        {
+            value: 2,
+            label: "BTC"
+        },
+        {
+            value: 3,
+            label: "SOL"
+        },
+        {
+            value: 4,
+            label: "BNB"
+        }
+    ]
+    const handleChange = obj => {
+        setselectedCoin(obj)
+    }
     return(
         <>
         <div className="create-header">
@@ -29,7 +50,11 @@ const Createback = () =>{
                 <br></br>
                 <Form.Group>
                     <Form.Label>Coin</Form.Label>
-                    <Form.Control type="text" placeholder="Coin"></Form.Control>
+                    <Select
+                    value = {selectedCoin} 
+                    options={coin}
+                    onChange={handleChange}
+                    />
                 </Form.Group>
                 <br></br>
                 <Form.Group>
