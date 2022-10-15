@@ -9,6 +9,11 @@ const Createback = () =>{
     const [startDate, setstartDate] = useState(null)
     const [endDate, setendDate] = useState(null)
     const [selectedCoin,setselectedCoin] = useState(null)
+    const [initialCash, setinitialCash] = useState('')
+    const [fmwValue, setfmwValue] = useState('')
+    const [smwValue, setsmwValue] = useState('')
+    const [stakeValue, setStakeValue] = useState('')
+
     const coin = [
         {
             value: 1,
@@ -30,6 +35,26 @@ const Createback = () =>{
     const handleChange = obj => {
         setselectedCoin(obj)
     }
+    const handleChangeCash = event => {
+        const result = event.target.value.replace(/\D/g, '');
+    
+        setinitialCash(result);
+      };
+      const handleChangeStake = event => {
+        const result = event.target.value.replace(/\D/g, '');
+    
+        setStakeValue(result);
+      };
+      const handleChangesmwValue = event => {
+        const result = event.target.value.replace(/\D/g, '');
+    
+        setsmwValue(result);
+      };
+      const handleChangefmwValue = event => {
+        const result = event.target.value.replace(/\D/g, '');
+    
+        setfmwValue(result);
+      };
     return(
         <>
         <div className="create-header">
@@ -59,12 +84,22 @@ const Createback = () =>{
                 <br></br>
                 <Form.Group>
                     <Form.Label>SMW</Form.Label>
-                    <Form.Control type="text" placeholder="smw"></Form.Control>
+                    <Form.Control type="text" placeholder="smw" value = {smwValue} onChange = {handleChangesmwValue}></Form.Control>
                 </Form.Group>
                 <br></br>
                 <Form.Group>
                     <Form.Label>FMW</Form.Label>
-                    <Form.Control type="text" placeholder="fmw"></Form.Control>
+                    <Form.Control type="text" placeholder="fmw" value = {fmwValue} onChange = {handleChangefmwValue}></Form.Control>
+                </Form.Group>
+                <br></br>
+                <Form.Group>
+                    <Form.Label>No. of Stake</Form.Label>
+                    <Form.Control type="text" placeholder="Run location" value= {stakeValue} onChange={handleChangeStake}></Form.Control>
+                </Form.Group>
+                <br></br>
+                <Form.Group>
+                    <Form.Label>Initial Cash</Form.Label>
+                    <Form.Control type="text" placeholder="Initial Cash" value = {initialCash} onChange={handleChangeCash}></Form.Control>
                 </Form.Group>
                 <br></br>
                 <Form.Group>
@@ -75,6 +110,7 @@ const Createback = () =>{
                 <Form.Group>
                     <Button as="sub" variant="primary">Create Scene</Button>
                 </Form.Group>
+                <br></br>
             </form>
         </div>
         </>
